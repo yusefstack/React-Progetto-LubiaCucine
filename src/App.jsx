@@ -1,14 +1,16 @@
-
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import SharedLayout from "./components/SharedLayout"
+import Home from "./components/Home"
 function App() {
   
   return (
-    <div>
-  
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route  path='/' element={<SharedLayout />}>
+          <Route index element={<Home />}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

@@ -1,14 +1,15 @@
 import React from 'react'
 import logo from '../assets/img/lubia-logo.svg'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <nav className='h-36 flex justify-between'>
       <img src={logo} alt="lubia logo" className='w-56 mt-5 ml-10'/>
       <div className='flex mt-16 text-2xl font-bold w-2/5 justify-between'>
-        <p className='text-white'>Home</p>
+        <Link to="/" className='text-white'>Home</Link>
         <p className='text-white'>About</p>
-        <p className='text-white'>Prodotti</p>
+        <Link to="/products"className='text-white'>Prodotti</Link>
       </div>
       <div className='flex mt-12 justify-evenly w-1/6'> 
         <div className='relative'>

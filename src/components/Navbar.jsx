@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className='flex mt-16 text-2xl font-bold w-2/5 justify-between'>
         <Link to="/" className='text-white'>Home</Link>
         <p className='text-white'>About</p>
-        <Link to="/products"className='text-white'>Prodotti</Link>
+        <Link to="/products"className='text-white'>Modelli</Link>
       </div>
       <div className='flex mt-12 justify-evenly w-1/6'> 
         <div className='relative'>

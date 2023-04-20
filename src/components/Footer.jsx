@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/img/lubia-logo.svg'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -50,9 +51,8 @@ const Footer = () => {
             Company
           </p>
           <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-            <a className="hover:opacity-75 cursor-pointer" href="#"> About </a>
+            <Link to="about" className="hover:opacity-75 cursor-pointer" href="#"> About </Link>
             <a className="hover:opacity-75 cursor-pointer" href="#"> Incontraci in store </a>
-            <a className="hover:opacity-75 cursor-pointer" href="#"> Storia </a>
             <a className="hover:opacity-75 cursor-pointer" href="#"> Careers </a>
           </nav>
         </div>

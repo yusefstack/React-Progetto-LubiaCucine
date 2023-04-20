@@ -5,7 +5,7 @@ const ProductsPath = (props) => {
   return (
     <Breadcrumb
             aria-label="Solid background breadcrumb example"
-            className="bg-violet-600 text-2xl py-10 px-5 dark:bg-gray-900"
+            className="bg-blue-200 text-2xl py-10 px-5 dark:bg-gray-900"
         >
             <h3>Home</h3>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 mx-2 h-6">

@@ -57,7 +57,7 @@ const Products = () => {
     <div>
         <ProductsPath path={"Modelli"} />
         <Searchbar handleSubmit={handleSubmit} handleChange={handleChange} value={searchWord} />
-        <div className={ProductsFound && "grid grid-cols-3"}>
+        <div className={ProductsFound ? "grid grid-cols-3" : undefined}>
             {productsToDisplay}
         </div>
     </div>

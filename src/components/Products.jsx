@@ -54,10 +54,10 @@ const Products = () => {
   
 
   return (
-    <div>
+    <div className='max-lg:mt-20'>
         <ProductsPath path={"Modelli"} />
         <Searchbar handleSubmit={handleSubmit} handleChange={handleChange} value={searchWord} />
-        <div className={ProductsFound ? "grid grid-cols-3" : undefined}>
+        <div className={ProductsFound ? "lg:grid lg:grid-cols-3" : undefined}>
             {productsToDisplay}
         </div>
     </div>

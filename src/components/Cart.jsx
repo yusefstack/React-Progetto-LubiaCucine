@@ -15,14 +15,14 @@ const Cart = () => {
     const cartProductsToDisplay = cartProducts.map(product => {
     return (
             <div key={uuid4()} className='relative'>
-                <div className='w-5/6 relative p-5 mb-10 rounded-lg bg-white flex'>
+                <div className='w-5/6 relative p-5 mb-10 rounded-lg bg-white flex max-lg:w-full'>
                     <img src={product.img} alt="product-image" className="w-1/2 rounded-lg" />
                     <div className="ml-5">
                         <h2 className="text-xl mb-5 font-bold text-gray-900">{product.model}</h2>
                         <p className="text-xl">€{product.price}</p>
                     </div>
                 </div>
-                <svg id={product.id} onClick={handleClick} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-5 text-blue-700 absolute left-3/4 bottom-3/4 w-5 cursor-pointer duration-150 hover:text-red-500">
+                <svg id={product.id} onClick={handleClick} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-5 text-blue-700 absolute right-[20%] bottom-[80%] w-5 cursor-pointer duration-150 hover:text-red-500 max-lg:ml-[15%] max-lg:right-[4%]">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </div>
@@ -36,11 +36,11 @@ const Cart = () => {
             <div className='mt-28 mb-40'>
                 <h1 className="mb-10 text-center text-white text-2xl font-bold">CARRELLO</h1>
                 <div>
-                    <div className="flex m-auto w-5/6">
-                        <div  className='w-2/3'>
-                            {cartProducts.length > 0 ? cartProductsToDisplay : <div className='text-white w-3/4 h-full text-center rounded-lg p-20 text-xl'>Nessun elemento nel carrello. </div>}
+                    <div className="flex m-auto w-5/6 max-lg:block">
+                        <div  className='w-2/3 max-lg:w-full'>
+                            {cartProducts.length > 0 ? cartProductsToDisplay : <div className='text-white w-3/4 h-full text-center rounded-lg p-20 text-xl max-lg:w-full'>Nessun elemento nel carrello. </div>}
                         </div>
-                        <div className="h-full rounded-lg border bg-white p-5 shadow-md md:mt-0 md:w-1/3">
+                        <div className="h-full rounded-lg border bg-white p-5 shadow-md mt-0 w-1/3 max-lg:w-full">
                             <div className="flex justify-between">
                                 <p className="text-gray-700">SPEDIZIONE E MONTAGGIO</p>
                                 <p className="text-blue-700">SEMPRE GRATUTITI</p>
